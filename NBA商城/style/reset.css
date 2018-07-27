@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    font-family: "Helvetica Neue","微软雅黑","Microsoft YaHei",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary,.block {
+    display: block
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+li {
+    list-style: none;
+}
+img {
+    border: 0
+}
