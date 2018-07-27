@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="./style/reset.css">
+    <link rel="stylesheet" type="text/css" href="./style/base.css">
+</head>
+<body>
+<nav class="clearfix">
+    <div class="container">
+    <div class="logo">
+        <img src="./images/logo.png"/>
+        <h2>猿计划</h2>
+    </div>
+    <ul class="navigation">
+        <li>
+            <a href="myInfo.html">未读消息</a>
+        </li>
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="knowlage.html">知识体系</a>
+        </li>
+        <li>
+            <a href="activity.html">活动中心</a>
+        </li>
+        <li>
+            <a href="article.html">文章</a>
+        </li>
+        <li>
+            <a href="login.html">登录</a>
+        </li>
+        <li>
+            <a href="register.html">注册</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+<section>
+    <div class="login_box">
+        <h3>欢迎回到猿计划</h3>
+        <input type="text" name="login_name" placeholder="请输入登录名">
+        <input type="text" name="login_password" placeholder="6-16位密码，区分大小写，不能使用空格">
+        <input type="checkbox" value="autologin">
+        <div class="login_content">
+            <label for="autologin" class="unchecked">下次自动登录</label>
+            <p class="fr">
+                <span>忘记密码？</span>
+                <a href="register.html">立即注册</a>
+            </p>
+        </div>
+        <div class="login_btn">登录</div>
+        <p class="con">使用合作网站登录</p>
+        <a id="weChat" href="">wechat</a>
+    </div>
+</section>
+</body>
+</html>
