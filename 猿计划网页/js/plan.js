@@ -15,7 +15,7 @@ var slider = document.querySelector('.slider'),
 
     imageWidth = parseInt(getComputedStyle(slider).width),
     imageReelWidth = imageNum * imageWidth,  //总图片盒子的宽度
-    index=1,  //全局变量：作为当前图片的索引
+    index=1,  //全局变量：作为当前图片的索引  
     animated = false,   //动画运行状态的存放
     timer;
 
@@ -32,7 +32,7 @@ var rotate = function(offindex){
         animated = true;
         // 左移并且未到最后,或者右移未到最后
         //虽然这个取盒子左边距离的很长，单独定义成一个变量的话，会导致值始终不变
-        if ((speed<0 && parseInt(getComputedStyle(imgBox).left) > newLeft) || (speed >0 && imgBoxLeft <newLeft)) {
+        if ((speed<0 && parseInt(getComputedStyle(imgBox).left) > newLeft) || (speed >0 && parseInt(getComputedStyle(imgBox).left) <newLeft)) {
             imgBox.style.left = parseInt(getComputedStyle(imgBox).left) + speed +'px';
             setTimeout(interval, intervalTime);
             // debugger;
@@ -76,6 +76,7 @@ function change() {
 
 // 上一张，下一张图片 
 next.onclick = function() {
+    
     index == imageNum ? index=1 : index += 1; //如果是最后一张照片了，返回第一张
     change();
     if (! animated) {

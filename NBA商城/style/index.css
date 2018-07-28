@@ -8,14 +8,15 @@
 }
 
 .header {
-  background-color: #0a3665;
   width: 100%;
+  background-color: #0a3665;
 }
 
 .header-box {
   position: relative;
   width: 100%;
   height: auto;
+  background-color: #0a3665;
 }
 
 .header-logo {
@@ -89,19 +90,20 @@
   top: 57px;
   left: 50%;
   transform: translateX(-50%);
-  width: 45%;
+  width: 42%;
   height: 40px;
 }
 .header-search input {
-  width: 100%;
+  width: 92%;
   height: 100%;
-  padding-left: 10px;
+  padding: 0 4%;
   border-radius: 3px;
   background-color: #fff;
+  border: 1px solid #ccc;
 }
 .header-search .icon-search {
   position: absolute;
-  right: 1%;
+  right: 2%;
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -118,6 +120,7 @@
   font-size: 0;
   background-color: #0669b2;
   height: 35px;
+  z-index: 10;
 }
 
 .header-nav li {
@@ -149,13 +152,16 @@
   background-image: url('../images/nike-logo.jpg');
   background-size: 60px 26px;
 }
-
+.small-ad-img, .small-header-search {
+  display: none;
+}
 .container {
   width: 100%;
 }
 
 .container .ad-img {
   width: 100%;
+  font-size: 0;
 }
 
 .container .ad-img img {
@@ -167,19 +173,22 @@
   height: 100%;
   background-size: 100% 100%;
   position: relative;
+  overflow: hidden;
 }
-.slide .slide-images {
+.slide .slide-images-box {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-.slide .slide-images .first {
-  display: inline-block;
-  background: url("../images/15314528688398910.jpg") center no-repeat;
-  background-size: 100% 100%;
+.slide .slide-images-box li {
+  float: left;
+  width: 33.33%;
+  font-size: 0;
+}
+.slide .slide-images-box li img {
   width: 100%;
-  height: 515px;
+  height: auto;
 }
 .slide-dots {
   position: absolute;
@@ -195,6 +204,7 @@
   border-radius: 50%;
   display: inline-block;
   background-color: #fff;
+  cursor: pointer;
 }
 .slide-dots li.active {
   background-color: #ff0000;
@@ -220,15 +230,16 @@
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translateX(-50%);
   transform: translateY(-50%);
 }
 .slide .prev span {
   background-position: -10px -2488px;
+  left: 50%;
 }
 .slide .next span {
   background-position: -133px -2488px;
+  right: 50%;
 }
 .section {
   padding: 0 5%;
@@ -258,7 +269,9 @@
   font-weight: 400;
   padding: 0 16px;
 }
-
+.mob-teams {
+  display: none;
+}
 .team-wrapper {
   width: 100%;
   font-size: 0;
@@ -427,10 +440,13 @@
   width: 25%;
   display: inline-block;
   vertical-align: top;
-  font-size: 12px;
 }
-.footer-container ul .nba-logo {
+
+.footer-container .nba-logo {
   margin-bottom: 20px;
+}
+.footer-container .nba-logo img {
+  width: 75%;
 }
 .footer-container .footer-item .none-xs {
   padding-bottom: 30px;
@@ -438,3 +454,382 @@
   color: #fff;
 }
 
+.item-code .footer-host p {
+  font-size: 16px;
+  color: #fff;
+}
+.item-code .footer-host a {
+  display: block;
+  margin: 8px 0 20px 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+}
+.item-code .footer-host a img {
+  width: 100%;
+  height: auto;
+}
+.item-help .footer-help-title {
+  padding-bottom: 16px;
+}
+.item-help .footer-help-title a {
+  font-size: 16px;
+  color: #fff;
+}
+.item-help .footer-help {
+  padding-bottom: 16px;
+  padding-left: 26px;
+  position: relative;
+}
+.item-help .footer-help a {
+  font-size: 14px;
+  color: #fff;
+}
+.item-help .footer-help .icon {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: inline-block;
+  background-image: url('../images/icons.png');
+}
+.footer-help .icon-footer-mail {
+  width: 16px;
+  height: 11px;
+  background-position: -60px -10px;
+}
+.footer-help .icon-footer-phone {
+  width: 14px;
+  height: 14px;
+  background-position: -86px -10px;
+}
+.footer-help .icon-footer-sevice {
+  width: 16px;
+  height: 14px;
+  background-position: -35px -10px;
+}
+.footer-help .icon-footer-weibo {
+  width: 17px;
+  height: 14px;
+  background-position: -280px -10px;
+}
+.footer-beian-info {
+  padding: 18px 0 10px 0;
+  font-size: 0;
+}
+.footer-beian-info span {
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 20px;
+  color: #fff;
+}
+.footer-beian-info a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+.footer-beian-info .footer-privacypolicy, .footer-returnpolicy {
+  position: relative;
+  margin-left: 30px;
+}
+.footer-privacypolicy::before, .footer-returnpolicy::before {
+  position: absolute;
+  left: -16px;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  content: '';
+}
+.footer-beian-police {
+  height: 20px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.footer-beian-police .icon-police {
+  display: inline-block;
+  background-image: url('../images/icon-b.png');
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  vertical-align: top;
+}
+.footer-beian-police span {
+  font-size: 12px;
+  color: #fff;
+  margin-left: 5px;
+}
+.footer-beian-text {
+  padding: 5px 0;
+}
+.footer-beian-text p {
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 18px;
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 1024px) {
+.header-box {
+  width: 100%;
+  position: relative;
+}
+.header-box .header-search {
+  top: 76px;
+  right: 18px;
+  left: auto;
+  transform: inherit;
+  width: 198px;
+}
+.header-logo .newly-added-shop {
+  top: 45px;
+  right: 2%;
+}
+.header-list {
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-right: 225px;
+  z-index: 10;
+}
+.header-logo {
+  padding: 24px 0 5px 24px;
+}
+.header-nav {
+  overflow: hidden;
+}
+.header-nav li a {
+  padding: 0 4px;
+  font-size: 14px;
+}
+.team-left-wrapper {
+  width: 100%;
+  font-size: 0;
+}
+.team-east, .team-west {
+  width: 50%;
+  display: inline-block;
+}
+.team-east dl, .team-west dl {
+  padding: 0 5%;
+}
+.team-east dl dt, .team-west dl dt {
+  width: 100%;
+}
+.team-east dl dt .thumbnail, .team-west dl dt .thumbnail {
+  width: 24%;
+  margin: 0 auto;
+  padding-bottom: 6%;
+}
+.team-east dl dd, .team-west dl dd {
+  width: 33.33%;
+}
+.team-wrapper {
+  position: relative;
+}
+.team-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.5px;
+  height: 98%;
+  width: 1px;
+  background-color: #ddd;
+}
+.team-right-wrapper {
+  display: none;
+}
+.footer-container .footer-item {
+  width: 33.33%;
+}
+.footer-container .nba-logo {
+  width: 100%;
+}
+.footer-container .nba-logo img {
+  width: 30%;
+}
+}
+
+@media screen and (max-width: 782px) {
+.header-logo .newly-added-shop, .header-list, .header-box .header-search, .header-nav, .container .ad-img {
+  display: none;
+}
+.header-logo .logo-item {
+  width: 46%;
+  padding: 0 27%;
+}
+.header-logo .logo-item img {
+  width: 50%;
+  padding:  0 25px;
+}
+.small-ad-img, .small-header-search {
+  display: block;
+}
+.small-ad-img {
+  width: 100%;
+  height: auto;
+}
+.small-ad-img img {
+  width: 100%;
+}
+.small-header-search {
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+.small-header-search input {
+  width: 84%;
+  margin: 0 8%;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 2px solid #cfcfcf;
+}
+.small-header-search .small-icon-search {
+  position: absolute;
+  right: 11%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/search-icon.png');
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+.team-left-wrapper, .team-right-wrapper, .team-line {
+  display: none;
+}
+.team-wrapper {
+  margin-bottom: 15px;
+}
+.mob-teams {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  border: 1px solid #e3e4e8;
+}
+.mob-team-img {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.mob-team-img img {
+  width: 40%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.mob-team-img a {
+  vertical-align: middle;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #000;
+}
+.east-togg {
+  border-right: 1px solid #e3e4e8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.team-nav {
+  width: 100%;
+  display: block;
+}
+.team-nav ul {
+  margin-top: 16px;
+  width: 100%;
+  font-size: 0;
+}
+.team-nav li {
+  width: 25%;
+  display: inline-block;
+  padding-right: 10px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.team-nav li:last-child {
+  padding-right: 0;
+}
+.team-nav li a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #0a3665;
+  color: #fff;
+  border-radius: 5px;
+}
+.banner-image-item {
+  width: 100%;
+}
+.banner-image-left {
+  margin: 0 0 14px 0;
+}
+.banner-image-right {
+  margin: 0 0 14px 0;
+}
+.footer-container .nba-logo img {
+  width: 25%;
+}
+.footer-container .footer-item {
+  width: 100%;
+  font-size: 14px;
+}
+.footer-container .item-help p {
+  width: 196px;
+  margin: 0 auto;
+}
+.footer-container .item-help p a {
+  font-size: 14px;
+}
+.footer-container .footer-item p {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.item-help .footer-help-title{
+  text-align: center;
+}
+.footer-container .footer-item .none-xs {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.footer-container .nba-logo {
+  width: 30%;
+  padding: 0 35%;
+}
+.footer-container .nba-logo img {
+  width: 100%;
+}
+.footer-container .item-code {
+  display: none;
+}
+.item-help .footer-help .icon {
+  top: 4px;
+}
+.footer-beian-info .footer-privacypolicy, .footer-returnpolicy {
+  margin-left: 15px;
+}
+.footer-privacypolicy::before, .footer-returnpolicy::before {
+  left: -7px;
+}
+.footer-beian-info {
+  padding: 14px 0 8px 0;
+}
+.footer-beian-police {
+  padding-bottom: 4px;
+}
+.footer-beian-info a {
+  font-size: 10px;
+  line-height: 12px;
+}
+.footer-beian-text p {
+  font-size: 8px;
+}
+
+
+}

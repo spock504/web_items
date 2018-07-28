@@ -27,27 +27,27 @@
           <a href="#" class="customize">定制球衣</a>
         </li>
       </ul>
+      <ul class="header-list">
+        <li>
+          <a href="#">登录/注册</a>
+        </li>
+        <li>
+          <a href="#">我的账户</a>
+        </li>
+        <li>
+          <a href="#"><i class="icon-shop"></i><span class="shop-cart-qty">0</span></a>
+        </li>
+        <li>
+          <a href="#">在线客服</a>
+        </li>
+      </ul>
     </div>
-    <ul class="header-list">
-      <li>
-        <a href="#">登录/注册</a>
-      </li>
-      <li>
-        <a href="#">我的账户</a>
-      </li>
-      <li>
-        <a href="#"><i class="icon-shop"></i><span class="shop-cart-qty">0</span></a>
-      </li>
-      <li>
-        <a href="#">在线客服</a>
-      </li>
-    </ul>
     <div class="header-search">
-      <input type="text" name="search" placeholder="短裤99元">
+      <input type="text" name="search" placeholder="短裤99元"/>
       <i class="icon-search"></i>
     </div>
   </div>
-  <ul class="header-nav">
+  <ul class="header-nav" id="header-nav">
     <li><a href="#">选择球队</a></li>
     <li><a href="#"><i class="icon-nick-logo"></i></a></li>
     <li><a href="#">品牌</a></li>
@@ -61,21 +61,28 @@
     <li><a href="#">篮球</a></li>
     <li><a href="#">配件</a></li>
   </ul>
+  <div class="small-ad-img">
+    <img src="./images/15299062212671192.jpg" alt="miniAd">
+  </div>
+  <div class="small-header-search">
+    <input type="text" name="small-search" placeholder="短裤99元"/>
+    <i class="small-icon-search"></i>
+  </div>
 </div>
 <div class="container">
   <div class="ad-img">
     <img src="./images/ad.png"/>
   </div>
   <div class="slide">
-    <ul class="slide-images">
-      <li class="image first"></li>
-      <li class="image second"></li>
-      <li class="image third"></li>
+    <ul class="slide-images-box">
+      <li><img src="./images/15314528688398910.jpg"/></li>
+      <li><img src="./images/15312942915553914.jpg"></li>
+      <li><img src="./images/15312113912538863.jpg"></li>
     </ul>
     <ul class="slide-dots">
-      <li class="active"></li>
-      <li></li>
-      <li></li>
+      <li class="active" rel="1"></li>
+      <li rel="2"></li>
+      <li rel="3"></li>
     </ul>
     <div class="slide-btn prev">
       <span></span>
@@ -136,6 +143,25 @@
           <img src="./images/team-logo.png">
         </div>
       </div>
+      <div class="team-line"></div>
+      <div class="mob-teams">
+        <div class="mob-team-img east-togg">
+          <img src="./images/east.png">
+          <a href="#">东部</a>
+        </div>
+        <div class="mob-team-img west-togg">
+          <img src="./images/west.png">
+          <a href="#">西部</a>
+        </div>
+      </div>
+      <div class="team-nav">
+        <ul>
+          <li><a href="#">球衣</a></li>
+          <li><a href="#">T恤</a></li>
+          <li><a href="#">短裤</a></li>
+          <li><a href="#">鞋子</a></li>
+        </ul>
+      </div>
     </div>
     <div class="banner-images-wrapper">
       <div class="banner-image-item">
@@ -145,7 +171,7 @@
       </div>
       <div class="banner-image-item">
         <div class="banner-image-right">
-          <img src="./images/15308415438069968.jpg"/>
+          <img src="./images/15306926956564598.jpg"/>
         </div>
       </div>
       <div class="banner-image-item">
@@ -243,10 +269,57 @@
         <p class="none-xs">门店位置</p>
         <p class="none-xs">帮助</p>
       </li>
-      <li class="footer-item">3</li>
-      <li class="footer-item">4</li>
+      <li class="footer-item item-code">
+        <div class="footer-host">
+          <p>扫码关注官方微信</p>
+          <a href="#"><img src="./images/footer-qrCode-btn.jpg" alt="wechat"></a>
+        </div>
+        <div class="footer-host">
+          <p>扫码下载NBA官方APP</p>
+          <a href="#"><img src="./images/footer-qrCode-btn.jpg" alt="app"></a>
+        </div>
+      </li>
+      <li class="footer-item item-help">
+        <p class="footer-help-title">
+          <a href="#">联系我们</a>
+        </p>
+        <p class="footer-help">
+          <i class="icon icon-footer-mail"></i>
+          <a href="#">service@nbastore.cn</a>
+        </p>
+        <p class="footer-help">
+          <i class="icon icon-footer-phone"></i>
+          <a href="#">400-0066-802（9:00 – 22:00)</a>
+        </p>
+        <p class="footer-help">
+          <i class="icon icon-footer-sevice"></i>
+          <a href="#">在线客服（9:00 – 22:00）</a>
+        </p>
+        <p class="footer-help">
+          <i class="icon icon-footer-weibo"></i>
+          <a href="#">NBASTORE官方微博</a>
+        </p>
+      </li>
     </ul>
+    <div class="footer-beian">
+      <div class="footer-beian-info">
+        <span>沪ICP备 14013659-2号</span>
+        <a href="#">使用条款</a>
+        <a href="#" class="footer-privacypolicy">隐私政策</a>
+        <a href="#" class="footer-returnpolicy">退换货政策</a>
+      </div>
+      <div class="footer-beian-police">
+        <i class="icon-police"></i>
+        <span> 沪公网安备 31010802001463号</span>
+      </div>
+      <div class="footer-beian-text">
+        <p>&copy;2017 NBA Media Ventures, LLC.保留所有权利。NBAStore.com.cn/NBAStore.cn上的任何部分都不得以任何形式被复制、再传播，或篡改。</p>
+        <p>欢迎您使用NBA中国官方旗舰店网站！ NBA中国官方旗舰店网站由NBA体育文化发展(北京)有限责任公司委托上海枫泊电子商务有限公司进行运营和维护。</p>
+      </div>
+    </div>
   </div>
 </div>
+<script type="text/javascript" src="./js/global.js"></script>
+<script type="text/javascript" src="./js/slide.js"></script>
 </body>
 </html>
