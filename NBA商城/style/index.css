@@ -352,18 +352,20 @@
   position: relative;
 }
 .mini-slide-wrapper .mini-slide-item {
-  padding-bottom: 40px;
   position: relative;
   width: 90%;
   margin: 0 auto;
   overflow: hidden; 
+}
+.mini-slide-wrapper .mini-slide-item ul {
+  position: absolute;
   font-size: 0;
+  left: 0;
 }
 
 .mini-slide-wrapper .mini-slide-item li {
   display: inline-block;
   font-size: 18px;
-  width: 196px;
 }
 .mini-slide-wrapper .mini-slide-item li a {
   width: 86%;
@@ -426,7 +428,7 @@
 }
 .footer .footer-container {
   padding: 0 5%;
-  margin: 0;
+  margin-top: 30px;
   width: 90%;
   background-color: #0a3665;
 }
