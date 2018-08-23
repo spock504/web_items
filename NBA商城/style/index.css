@@ -171,7 +171,7 @@
 #box {
   position:relative;
   width:100%;
-  height:450px;
+  height:100%;
 }
 #box .imglist{
   position:relative;
@@ -380,7 +380,7 @@
 }
 .mini-slide-wrapper .slide-turn-icon {
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   display: inline-block;
   width: 14px;
@@ -627,7 +627,7 @@
 }
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 768px) {
 .header-logo .newly-added-shop, .header-list, .header-box .header-search, .header-nav, .container .ad-img {
   display: none;
 }
@@ -674,6 +674,12 @@
   background-image: url('../images/search-icon.png');
   background-size: 30px 30px;
   cursor: pointer;
+}
+#box .imglist{
+  height:260px;
+}
+#box .imglist li{
+  height: 260px;
 }
 .team-left-wrapper, .team-right-wrapper, .team-line {
   display: none;
@@ -747,6 +753,15 @@
 .banner-image-right {
   margin: 0 0 14px 0;
 }
+.mini-slide-wrapper .mini-slide-btn {
+  top: 40%;
+}
+.mini-slide-wrapper .btn-prev {
+  left: 3%;
+}
+.mini-slide-wrapper .btn-next {
+  right: 3%;
+}
 .footer-container .nba-logo img {
   width: 25%;
 }
@@ -801,6 +816,10 @@
 .footer-beian-info a {
   font-size: 10px;
   line-height: 12px;
+}
+.footer-beian-info span {
+  display: block;
+  margin-bottom: 10px;
 }
 .footer-beian-text p {
   font-size: 8px;
